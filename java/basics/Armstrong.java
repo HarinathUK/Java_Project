@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Armstrong 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int num = scan.nextInt();
+		int number = num;
+		int count = 0;
+		while (num!=0)
+		{
+			num = num/10;
+			count++;
+		}
+		num = number;
+		int armstrong = 0;
+		while (num!=0)
+		{
+			int rem = num%10;
+			armstrong += power(rem,count); 
+			num = num/10;
+		}
+		if (armstrong == number)
+			System.out.println(number+ " is a Armstrong number");
+		else
+			System.out.println(number+ " is not a Armstrong number");
+	}
+	public static int power(int x, int y)
+	{
+		int power = x;
+		for (int i=1; i<y; i++)
+		{
+			power *= x;
+		}
+		return power;
+	}
+}

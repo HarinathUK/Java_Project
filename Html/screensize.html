@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Screen Size</title>
+	<style>
+		div>h1
+		{
+			display:name;
+		}
+		@media(min-width:0px) and (max-width:500px)
+		{
+			body
+			{
+				background-color: red;
+			}
+			div>h1:nth-child(4)
+			{
+				display:block;
+			}
+		}
+		@media(min-width:501px) and (max-width:700px)
+		{
+			body
+			{
+				background-color: green;
+			}
+			div>h1:nth-child(3)
+			{
+				display:block;
+			}
+		}
+		@media(min-width:701px) and (max-width:1000px)
+		{
+			body
+			{
+				background-color: blue;
+			}
+			div>h1:nth-child(2)
+			{
+				display:block;
+			}
+		}
+		@media(min-width:1000px)
+		{
+			body
+			{
+				display:block;
+			}
+		}
+		@media(min-width:1000px)
+		{
+			body
+			{
+				background-color: violet;
+			}
+			div>h1:nth-child(1)
+			{
+				display:block;
+			}
+		}
+	</style>
+</head>
+<body>
+<div>
+	<h1>Screen Size:<span id="count">0</span>PX</h1>
+	<!-- <script code> -->
+		<script>
+			let spanTag=document.getElementById('count');
+			window.addEventListener('resize',function()
+			{
+				let screenSize=window.innerWidth;
+				spanTag.innerText=screenSize;
+			}
+				)
+		</script>
+</div>
+</body>
+</html>

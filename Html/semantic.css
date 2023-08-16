@@ -1,0 +1,48 @@
+h1 
+{
+	background-color: darkorange;
+	color: white;
+	padding: 5px;
+	margin: 0px;
+}
+nav
+{
+	background-color: darkcyan;
+	color: white;
+	padding: 10px;
+	text-align: center;
+
+}
+
+nav>a
+{
+	color: white;
+	padding: 30px;
+}
+section
+{
+	padding: 20px;
+	width:150px;
+	background-color: darkcyan;
+	color: white;
+	float: left;
+}
+footer
+{
+		
+	background-color: lightsteelblue;
+	margin-left: 190px; 
+	padding: 10px;
+	
+}
+h3
+{
+	background-color: gray;
+	color: white;
+	font-style: italic;
+	padding: 5px;
+}
+p
+{
+	padding: 5px;
+}

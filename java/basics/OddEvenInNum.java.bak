@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class OddEvenInNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a number");
+		long num = scan.nextLong();
+		int odd = 0;
+		int even = 0;
+		while (num !=0)
+		{
+			long i = (num%10)l;
+			num = num/10;
+			if (i%2==0)
+				even++;
+			else
+				odd++;
+		}
+		System.out.println("Odd digits: " +odd);
+		System.out.println("Even digits: "+ even);
+	}
+}

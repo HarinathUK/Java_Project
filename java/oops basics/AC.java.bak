@@ -1,0 +1,33 @@
+class AC 
+{
+	int temp;
+	boolean on = false;
+
+	void switchOn()
+	{
+		on = true;
+		temp = 23;
+		System.out.println("AC is on, current temperature is= "+ temp);
+	}
+
+	void increaseTemp()
+	{
+		if (on ==false)
+		{
+			System.out.println("First turn on the AC");
+			return;
+		}
+		temp++;
+		System.out.println("Temperature increased to "+ temp);
+	}
+}
+
+class Test2
+{
+	public static void main(String[] args) 
+	{
+		AC ac1 = new AC();
+		ac1.switchOn();
+		ac1.increaseTemp();
+	}
+}

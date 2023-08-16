@@ -1,0 +1,10 @@
+inp_num = int(input("Enter a number: "))
+n=inp_num
+l=len(n)
+Arm_num=0
+while n!=0:
+arm_num = (n%10)**l + arm_num
+n = n//10
+if arm_num ==
+
+

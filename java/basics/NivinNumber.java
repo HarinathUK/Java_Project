@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class NivinNumber 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter a number");
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		int number = num;
+		int sum = 0;
+		while (num!=0)
+		{
+			int rem = num%10;
+			sum += rem;
+			num /= 10;
+		}
+		if (number%sum==0)
+			System.out.println("It is a nivin number");
+		else
+			System.out.println("It is not a nivin number");
+
+	}
+}

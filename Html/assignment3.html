@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested Table</title>
+	<style>
+		.tableclr1
+		{
+			border-color: red;
+		}
+
+		.tableclr2
+		{
+			border-color: violet;
+		}
+	</style>
+</head>
+<body>
+	<h1 align="center">Nested Table</h1>
+<table class="tableclr1" cellpadding="20px" border="1px" align="center">
+	<tr>
+		<td>Table 1</td>
+
+		<td>Table 1
+			<table class="tableclr2" border="2px" cellpadding="10px">
+				<tr>
+					<td>Table 2</td>
+					<td>Table 2</td>
+				</tr>
+				<tr>
+					<td>Table 2</td>
+					<td>Table 2</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+		<td>This contains a list
+		<ul type="disc">
+			<li>item-1</li>
+			<li>item-2</li>
+		</ul>
+	</td>
+
+	<td>Table 1</td>
+	</tr>
+
+
+
+</table>
+</body>
+</html>

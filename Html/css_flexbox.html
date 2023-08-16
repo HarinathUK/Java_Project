@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Flex Box</title>
+	<style>
+		.container
+		{
+			display: inline;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 10px 20px;
+			align-items: flex-end;
+			justify-content: center;
+
+		}
+		.flex-item
+		{
+			padding: 1.5rem;
+			font-size: 1.6rem;
+			color: white;
+		}
+		.item-1
+		{
+			background-color: blue;
+		}
+		.item-2
+		{
+			background-color: yellow;
+		}
+		.item-3
+		{
+			background-color: violet;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="flex-item item-1">Item-1</div>
+</div>
+<div class="container">
+	<div class="flex-item item-2">Item-2</div>
+</div>
+<div class="container">
+	<div class="flex-item item-3">Item-3</div>
+</div>
+</body>
+</html>
